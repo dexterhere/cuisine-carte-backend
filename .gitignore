@@ -1,0 +1,25 @@
+# Ignore virtual environments
+env/
+venv/
+
+# Ignore Python cache files
+*.pyc
+__pycache__/
+
+# Ignore database files
+*.sqlite3
+
+# Ignore Django migrations
+**/migrations/
+
+# Ignore media files (if you plan to store media)
+media/
+
+# Ignore IDE settings (for PyCharm)
+.idea/
+
+# Ignore environment files
+.env
+
+# Ignore node_modules if you're using React in the frontend
+node_modules/
