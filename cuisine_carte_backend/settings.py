@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "accounts",
     "rest_framework_simplejwt",
-    
+    "crud_recipe",
 
 ]
 
@@ -151,6 +151,12 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
 }
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
+DATA_UPLOAD_MAX_MEMORY_SIZE = 10485760  # 10MB limit for file uploads (in bytes)
+
 
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=20),
