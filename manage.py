@@ -5,9 +5,8 @@ import sys
 import dotenv
 
 
-
 def main():
-    dotenv.read_dotenv()
+    dotenv.load_dotenv()  # Correct method to load environment variables from .env
     """Run administrative tasks."""
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "cuisine_carte_backend.settings")
     try:
