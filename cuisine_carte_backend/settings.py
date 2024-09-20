@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "accounts",
     "rest_framework_simplejwt",
     "crud_recipe",
+    "comment",
 
 ]
 

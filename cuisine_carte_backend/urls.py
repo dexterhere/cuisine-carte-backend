@@ -5,4 +5,5 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path('api/user/', include('accounts.urls')),
     path('crud/', include('crud_recipe.urls')),
+    path('comment/', include('comment.urls')),
 ]
